@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stackbuffers.samangrocery">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NumberVerificationActivity"></activity>
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".SplashTestActivity" />
+        <activity android:name=".Contacct_usActivity" />
+        <activity android:name=".Purchase_HistoryActivity" />
+        <activity android:name=".ThankYouActivity" />
+        <activity android:name=".CheckOutActivity" />
+        <activity
+            android:name=".ProductDetailsVeriationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Categories.SubSubCategoriesActivity" />
+        <activity android:name=".Categories.CategoriesActivity" />
+        <activity android:name=".Categories.SubCategoriesActivity" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MultiTypesProductsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".UpdateProfileActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".StartActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

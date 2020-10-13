@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Fragments.CartFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="My Cart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:padding="16dp"
+        app:doneCircleColor="@android:color/holo_green_light"
+        app:doneCircleRadius="12dp"
+        app:doneStepLineColor="@color/colorAccent"
+        app:doneStepMarkColor="@color/colorPrimary"
+        app:doneTextColor="@color/colorPrimary"
+        app:nextStepLineColor="@color/colorAccent"
+        app:nextTextColor="@color/colorAccent"
+        app:selectedCircleColor="@android:color/holo_green_light"
+        app:selectedCircleRadius="12dp"
+        app:selectedStepNumberColor="@color/colorPrimary"
+        app:selectedTextColor="@color/colorAccent"
+        app:stepLineWidth="1dp"
+        app:stepNumberTextSize="12sp"
+        app:stepPadding="4dp"
+        app:stepViewStyle="@style/StepView" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/check_out"
+        android:layout_below="@+id/step_view"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/checkout_btnCheckToSecond"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_btn_start"
+        android:focusable="true"
+        android:text="Check Out"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/check_out"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_btn"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:text="Checkout"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txt_RS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="70dp"
+            android:layout_toStartOf="@id/seperator"
+            android:fontFamily="@font/poppins_regular"
+            android:text="RS "
+            android:textColor="@android:color/white" />
+
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/arrowImage"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/arrowImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/ic_arrow_forward_black_24dp"
+            android:backgroundTint="@android:color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

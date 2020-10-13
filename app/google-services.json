@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "280480867714",
+    "firebase_url": "https://saman-grocer.firebaseio.com",
+    "project_id": "saman-grocer",
+    "storage_bucket": "saman-grocer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280480867714:android:941417f60c8132f20fdb9b",
+        "android_client_info": {
+          "package_name": "com.stackbuffers.samangrocery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280480867714-v7121508bshahlb14gcrq8p63pspqgoq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stackbuffers.samangrocery",
+            "certificate_hash": "5699ea62b78f70f7afce108f442e8979fffe0f0b"
+          }
+        },
+        {
+          "client_id": "280480867714-pktm3e2p5b84b5smcu19e183ecjmm516.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtTy_JrT2NNWsPTx_3gY-na2bZ5cPmKq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280480867714-pktm3e2p5b84b5smcu19e183ecjmm516.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

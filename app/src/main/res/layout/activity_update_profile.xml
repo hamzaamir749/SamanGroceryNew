@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Account"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:layout_margin="10sp"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="10sp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_name"
+                    style="@style/Textfiled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_marginTop="20sp"
+                    android:padding="12dp"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Textfiled"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_marginTop="20sp"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:padding="12sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_paddress"
+                    style="@style/Textfiled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_marginTop="20sp"
+                    android:hint="Permanent Address"
+                    android:inputType="textPostalAddress"
+                    android:padding="12sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_address"
+                style="@style/Textfiled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/shape_item"
+                android:hint="Complete Address (For Home Delivery)"
+                android:inputType="textPostalAddress"
+                android:padding="12sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:visibility="gone"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_password"
+                style="@style/Textfiled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="20sp"
+                android:padding="12dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_confirmpassword"
+                style="@style/Textfiled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="20sp"
+                android:padding="12dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/register_btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_btn_start"
+                android:layout_marginHorizontal="60sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="@dimen/pdlg_space_1.0x"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Update"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

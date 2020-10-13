@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titles">
+        <item>ACCOUNT\n123</item>
+        <item>BAND</item>
+        <item>MEMBERSHIP</item>
+        <item>3</item>
+    </string-array>
+</resources>

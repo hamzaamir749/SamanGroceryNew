@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Fragments.Fragment_PlaceOrder">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/po_linearOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <EditText
+            android:id="@+id/checkout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pdlg_space_1.0x"
+            android:background="@drawable/shape_item"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter Name"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/checkout_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pdlg_space_1.0x"
+            android:background="@drawable/shape_item"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter Address"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/checkout_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pdlg_space_1.0x"
+            android:background="@drawable/shape_item"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Rawalpindi"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/checkout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pdlg_space_1.0x"
+            android:background="@drawable/shape_item"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter Phone"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/checkout_btnCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_btn_start"
+            android:focusable="true"
+            android:text="Check Out"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:id="@+id/po_linearTwo"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/camel_gif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thank you!\n Your order will arrive soon"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/receipt_image" />
+
+        <TextView
+            android:id="@+id/complete_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RS 2450"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/complete_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_btn_start"
+            android:padding="5sp"
+            android:text="Done"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+</ScrollView>

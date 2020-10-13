@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F97D40</color>
+    <color name="colorPrimaryDark">#F97D40</color>
+    <color name="colorAccent">#F97D40</color>
+
+    <color name="active_dot">#F97D40</color>
+    <color name="inActive_dot">#E4E6E5</color>
+    <color name="greencolor">#0FDD18</color>
+    <color name="colorWhatsapp">#25d366</color>
+    <color name="colorlite">#90F97D40</color>
+</resources>

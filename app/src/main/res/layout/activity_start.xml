@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5ffff"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/flipper_layout"
+            android:layout_width="match_parent"
+            android:layout_above="@id/indicator"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            app:tabBackground="@drawable/indicator_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+    </RelativeLayout>
+
+
+
+
+<LinearLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:padding="10sp"
+    android:layout_marginBottom="20sp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ready to order Grocery?"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:padding="10sp"
+        android:textColor="@android:color/black"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="20sp">
+
+        <Button
+            android:id="@+id/btn_start_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="create Account"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/shape_btn_start"
+            android:layout_marginEnd="20sp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_start_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_start"
+            android:layout_marginStart="20sp"
+            android:text="login"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</RelativeLayout>
